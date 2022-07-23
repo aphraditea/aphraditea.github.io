@@ -1,0 +1,21 @@
+---
+layout: compress
+---
+
+<!DOCTYPE html>
+<html>
+{% include head.html %}
+<body>
+{% include sidebar.html %}
+  <div id="content">
+	{% if page.page == "projects" %}
+	  {% include projects.html %}
+	{% else if page.page == "about" %}
+	<span>{{site.about_text}}</span>
+	{% else if page.page == "contact" %}
+	<span>{{site.contact_text}}</span>
+	{% endif %}
+  </div>
+</body>
+{% include scripts.html %}
+</html>

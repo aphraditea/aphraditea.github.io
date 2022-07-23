@@ -1,0 +1,10 @@
+<div class="projects">
+	{% for project in site.data.projects %}
+	<div class="project">
+		<a href="{{project.link}}" target="_blank">
+			<figure style="background-image: url({{project.image}});"></figure>
+			<span class="project-title">{{ project.name }}</span>
+		</a>
+	</div>
+	{% endfor %}
+</div>

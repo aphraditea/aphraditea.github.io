@@ -1,0 +1,92 @@
+---
+---
+
+@charset "utf-8";
+
+html, body {
+	margin: 0;
+	background: #f7f5f2;
+    font-family: "Helvetica Neue", sans-serif;
+    scroll-behavior: smooth !important;
+    transition: all 0.25s ease;
+}
+
+.sidebar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 192px;
+	padding: 20px 40px;
+	height: 100%;
+}
+
+h1 {
+	font-size: 20px;
+	font-weight: 400;
+}
+
+a {
+	color: #000000;
+	text-decoration: none;
+}
+
+a.pagelink {
+	display: block;
+	font-size: 17px;
+	font-weight: 400;
+	margin: 0 0 8px 0;
+}
+
+a.pagelink.active {
+	text-decoration: underline;
+}
+
+div#content {
+	margin: 64px 64px 0 256px;
+}
+
+div.project{
+	display: inline-block;
+	width: 200px;
+	height: 200px;
+	margin: 16px;
+}
+
+div.project figure {
+	margin: 0 0 8px 0;
+	width: 200px;
+	height: 160px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+div.error {
+	width: 100%;
+	font-size: 20px;
+	margin: 16px 0;
+	text-align: center;
+}
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 0.5vmax !important;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: white !important;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #363636 !important;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: black !important;
+}
+
+
