@@ -1,6 +1,7 @@
 source "http://rubygems.org"
 gem "jekyll"
 gem "rack"
+gem "webrick"
 
 group :jekyll_plugins do
   gem "jekyll-feed"
